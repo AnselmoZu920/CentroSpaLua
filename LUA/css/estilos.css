@@ -1,5 +1,3 @@
-/*Barra Nav Nontendo prueba*/
-
 *{
     padding: 0;
     margin: 0;
@@ -28,12 +26,13 @@ p{
     background: var(--color3);
 }
 :root{
-    --color1:#99E1D9;
+    --color1:#9EAEAA;
     --color2:#32292F;
     --color3:#F0F7F4;
-    --color4:#70ABAF;
-    --color5:#705D56;
-    --color6:#FFCAAF;
+    --color4:#B2AEAA;
+    --color5:#DAAEAA;
+    --color6:#FFCAAF; 
+    --color7:#EEAEAA;
     --fontTitle:'Playfair Display', serif;
     --fontText:'Kanit', sans-serif;
 }
@@ -81,8 +80,9 @@ nav{
 }
 
 .drop-down-button:hover{
-    transition: .5s all;
-    color: var(--color4);
+    transition: 1s ease-in-out;
+    color: var(--color2);
+    text-decoration: underline;
 }
 
 .drop-down-menu-content a{
@@ -224,7 +224,7 @@ header.abajo,
     position: relative;
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(rgba(153, 225, 217,.9), rgba(112, 171, 175, .9)),url(../lua-img/Citas.png) center fixed;
+	background: linear-gradient(rgba(158, 174, 170,.95), rgba(178, 174, 170,.95)),url(../lua-img/Citas.png) center fixed;
 	background-size: cover;
 	background-position: center center;
     display: flex;
@@ -387,10 +387,9 @@ header.abajo,
 }
 .txt-inicio{
     color: var(--color2);
-    margin-left: 18%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin: 3%;
     font-size: 18px;
+    text-align: center;
 }
 .info{
     background: var(--color2);
@@ -410,9 +409,7 @@ header.abajo,
     margin-top: 10px;
 }
 .copyr{
-    position: absolute;
-    margin-left: 1.5%;
-    margin-top: 11px;
+    font-size: 10px;
     color:var(--color1);
 }
 .inicio-txt-body{
@@ -439,10 +436,14 @@ header.abajo,
     position:sticky;
 }
 .h1-tit{
+    display: flex;
     font-size: 4rem;
-    margin-left: 38%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration:underline;
+    color: var(--color2);
 }
 .txt-quiro-txt{
     display: inline-block;
@@ -452,6 +453,9 @@ header.abajo,
 }
 .txt-quiro{
     font-size: 30px;
+}
+.p-quiro, .txt-cosmi{
+    text-align: justify;
 }
 .img-quiro{
     width: 45%;
@@ -471,6 +475,10 @@ header.abajo,
     justify-content: center;
     text-align: center;
     color: var(--color5);
+}
+.btn-quiro:hover{
+    transition: 1s ease-in;
+    color: var(--color1);
 }
 /*Cosmiatria*/
 .cosmi{
@@ -545,33 +553,33 @@ header.abajo,
 .red-insta, .red-mail, .red-face{
     margin-left: 50px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
     font-size: 40px;
 }
 .red-face:hover{
-    transition: .5s all;
-    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    transform: scale(1.09);
     color: dodgerblue;
 }
 .red-insta:hover{
-    transition: .5s all;
-    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    transform: scale(1.09);
     background: -webkit-linear-gradient(120deg, #ff00f7, #00d0ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 .red-mail:hover{
-    transition: .5s all;
-    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    transform: scale(1.09);
     color: red;
 }
 .ubi{
     position: absolute;
     margin-top: 5px;
     margin-left: -60px;
-    color: var(--color5);
+    color: var(--color3);
 }
 .ubi-info{
     text-align: center;
@@ -595,7 +603,6 @@ header.abajo,
     display: none;
 }
 .inputGroup {
-    font-family: 'Segoe UI', sans-serif;
     margin:  0 1em 0;
     width: 600px;
     position: relative;
@@ -632,9 +639,8 @@ header.abajo,
     box-shadow: 1px 10px 10px var(--color4);
   }
   .btn-form {
-    --hover-shadows: 16px 16px 33px #99E1D9,
-                      -16px -16px 33px #99E1D9;
-    --accent: #70ABAF;
+    --hover-shadows: 16px 16px 33px var(--color5),
+                      -16px -16px 33px var(--color7);
     font-weight: bold;
     letter-spacing: 0.1em;
     border: none;
@@ -654,8 +660,8 @@ header.abajo,
    }
   .btn-form:active {
     box-shadow: var(--hover-shadows),
-                 var(--accent) 0px 0px 30px 5px;
-    background-color: var(--accent);
+                 var(--color4) 0px 0px 30px 5px;
+    background-color: var(--color1);
     color: var(--color2);
     transform: scale(0.95);
    }
@@ -682,8 +688,10 @@ header.abajo,
 }
 .p-about{
     font-size: 17px;
-    padding: 10px;
-    margin-left: 11%;
+    padding-right: 10%;
+    justify-content: center;
+    margin-left: 10%;
+    text-align: justify;
 }
 .li-about{
     margin-left: 12%;
@@ -752,23 +760,22 @@ header.abajo,
     width: 100%;
 }
 .qrptc{
-    margin-left: 50px;
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
-    gap: 2.4rem;
-    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
     margin-bottom: 100px;
 }
 .serv-qrp{
-    border-radius: 5px;
+    border-radius: 20px;
     width: 300px;
     height: 450px;
-    background-color:var(--color2);
+    background-color:var(--color1);
     padding: 10px;
-    color: var(--color3);
+    color: var(--color2);
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin: 50px 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .img-serv{
     width: 100%;
@@ -776,6 +783,7 @@ header.abajo,
     border-radius: 15px;
 }
 .txt-qrp{
+    font-weight:500;
     margin: 15px;
 }
 .btn-qrp{
@@ -787,14 +795,14 @@ header.abajo,
     font-size: 1rem;
     padding: .5rem 1rem;
     position: relative;
-    bottom: 10px;
+    bottom: 0px;
     opacity: 1;
     cursor: pointer;
  }
  .serv-qrp:hover{
     transition: .9s;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
     transform: translateY(-10px);
+    background: var(--color4);
  }
 /*HORARIO*/
 .btn-qrp:hover{
@@ -837,8 +845,8 @@ header.abajo,
 .horario-dia:hover{
     transition: .4s;
     transform: scale(1.05);
-    color: var(--color1);
-    background: var(--color2);
+    color: var(--color2);
+    background: var(--color4);
     border-radius: 10px;
 }
 .txt-horario{
@@ -848,9 +856,9 @@ header.abajo,
     padding-top: 50px;
 }
 .ptxt-horario{
-    color: var(--color4);
+    color: var(--color7);
     margin-top: 10px;
-    margin-left: 250px;
+    text-align: center;
     font-size: 20px;
 }
 .mapa-ubicacion{
@@ -870,24 +878,27 @@ header.abajo,
     color: var(--color3);
 }
 .redes{
-    background: var(--color1);
+    background: var(--color5);
     min-height: 250px;
 }
 .p-ubicacion{
-    color: var(--color4);
+    color: var(--color7);
     margin-left: 200px;
     font-size: 20px;
     margin-top: 10px;
+    
 }
 .a-redes{
     font-size: 18px;
+
 }
 .a-redes:hover{
     transition: .5s all;
-    color: var(--color5);
+    color: var(--color3);
 }
 .p-redes{
-    color: var(--color5);
+    justify-content: center;
+    color: var(--color3);
     margin-top: 10px;
     font-size: 20px;
 }
@@ -905,7 +916,7 @@ header.abajo,
 }
 .map{
     font-size: 20px;
-    color: var(--color5);
+    color: var(--color3);
 }
 .a-red-link{
     text-decoration: overline;
@@ -913,16 +924,11 @@ header.abajo,
 .p-ubi{
     font-size: 20px;
     margin: 3px;
-    color: var(--color4);
+    color: var(--color2);
 }
   @media screen and (max-width: 1283px){
-    .qrptc{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(auto-fit, 1fr);
-        gap: 2rem;
-    }
     .txt-inicio{
-        font-size: 23px;
+        font-size: 18px;
     }
     .txt-quiro{
         font-size: 27px;
@@ -938,7 +944,7 @@ header.abajo,
         margin-left: 0px;
     }
     .txt-inicio{
-        font-size: 20px;
+        font-size: 16px;
     }
     .txt-quiro{
         font-size: 25px;
@@ -973,9 +979,6 @@ header.abajo,
     .comsi{
         display: block;
     }
-    .h1-tit{
-        margin-top: 0px;
-    }
     .horario-card{
         width: 80%;
         height: 150px;
@@ -996,18 +999,13 @@ header.abajo,
         margin-left: 100px;
     }
     .ptxt-horario{
-        margin-left: 100px;
+        font-size: 17px;
     }
     .titulo-qrp{
         margin-left: 90px;
     }
     .desc-qrp{
         margin-left: 140px;
-    }
-    .qrptc{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto-fit, 1fr);
-        gap: 50px;
     }
     .quiro{
         width: 100%;
@@ -1046,9 +1044,6 @@ header.abajo,
     .w-h1{
         font-size: 35px;
     }
-    .copyr{
-        margin-left: 10px;
-    }
 }
 @media screen and (max-width: 850px){
     .cosmi{
@@ -1083,10 +1078,6 @@ header.abajo,
     }
     .card .content li{
         font-size: .8rem;
-    }
-    .h1-tit{
-        margin-top: 105px;
-        margin-left: 30%;
     }
     .redes{
         height: 550px;
@@ -1169,17 +1160,15 @@ header.abajo,
         transition: .1s linear;
         left: 0%;
     }
-    .copyr{
-        margin-left: -160px;
-    }
 }
-@media screen and (max-width: 650px){
-    .qrptc{
-        margin-left: 30px;
+@media screen and (max-width: 680px){
+    .p-about{
+        font-size: 15px;
     }
     .serv-qrp{
         width: 230px;
         height: 370px;
+        margin: 15px 15px;
     }
     .btn-qrp{
         height: 35px;
@@ -1204,11 +1193,10 @@ header.abajo,
         height: 80px;
     }
     .h1-tit{
-        margin-left: 29%;
-        font-size: 50px;
+        font-size: 40px;
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
     .qrptc::before{
         width: 93%;
         margin-left: 1px;
@@ -1231,12 +1219,14 @@ header.abajo,
         font-size: 15px;
     }
     .p-about{
-        margin-left: 9%;
+        margin-left: 3%;
         font-size: 13px;
+        padding-right: 5%;
     }
     .li-about{
         margin-left: 9%;
         font-size: 13px;
+        padding-left: 0px;
     }
     .inicio-txt{
         font-size: 19px;
@@ -1264,7 +1254,7 @@ header.abajo,
     }
 
     .txt-inicio{
-        font-size: 18px;
+        font-size: 14px;
     }
     .map{
         font-size: 16px;
@@ -1282,7 +1272,6 @@ header.abajo,
         margin: 10px
     }
     .ptxt-horario{
-        margin-left: 20px;
         font-size: 17px;
     }
     .p-ubicacion{
@@ -1292,12 +1281,6 @@ header.abajo,
     .p-redes{
         margin-left: 20px;
         font-size: 17px;
-    }
-    .qrptc{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto-fit, 1fr);
-        gap: 50px 10px;
-        margin-left: 25px;
     }
     .txt-qrp{
         font-size: 10px;
@@ -1367,8 +1350,7 @@ header.abajo,
         font-size: .9rem;
     }
     .h1-tit{
-        font-size: 30px;
-        margin-left: 30%;
+        font-size: 20px;
     }
     .quiro{
         height: 650px;
@@ -1383,19 +1365,10 @@ header.abajo,
         justify-content: center;
         width: 350px;
     }
-}
-@media screen and (max-width:400px){
-
-    .qrptc{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(auto-fit, 1fr);
-        gap: 3rem;
-        margin-left: 15%;
-    }
     .serv-qrp{
-        border-radius: 10px;
-        width: 250px;
-        height: 370px;
+        width: 170px;
+        height: 260px;
+        margin: 20px 5px -30px 5px;
     }
     .info-bar{
         font-size: 12px;
@@ -1405,9 +1378,47 @@ header.abajo,
         justify-content: center;
         width: 300px;
     }
-}
-@media screen and (max-width:300){
-    .qrptc::before{
-        width: 50%;
+    .btn-qrp{
+        bottom: 12px;
+        height: 20px;
     }
 }
+@media screen and (max-width:380px){
+    .serv-qrp{
+        width: 270px;
+        height: 350px;
+    }
+    .btn-qrp{
+        bottom: 5px;
+        height: 20px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .txt-qrp{
+        font-size: 15px;
+
+    }
+    .info-h1{
+        margin-top: 2px;
+        font-size: 10px;
+    }
+    .info-p{
+        margin-top: 2px;
+        font-size:10px;
+    }
+    .info{
+        height: 30px;
+    }
+    .copyr{
+        font-size: 7px;
+    }
+    .inputGroup{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
+}
+@media screen and (max-width:280px){
+
+}
+
